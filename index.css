@@ -1,0 +1,177 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+* {
+    font-family: 'Arial', 'sans-serif';
+}
+
+body {
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: head;
+    background-color: #fe6f61;
+    color: white;
+    padding: 1rem;
+}
+
+.header-title {
+    text-align: center;
+    margin: 0;
+}
+
+.header-description {
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #333;
+    margin: 0;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding-top:15px;;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+main {
+    grid-area: main;
+}
+
+.hero-container {
+    height: 400px;
+    background: url('https://toolbx-ecommerce.s3.amazonaws.com/hero-banner-background-image.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+.hero-container img {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.hero-text {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.product-container {
+    padding: 25px 50px;
+}
+
+.product-listing {
+    display: flex;
+    flex-flow: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.product-section {
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center;
+    width: 100%;
+}
+
+.product {
+    width: 200px;
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    padding: 15px;
+    gap: 10px;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-description {
+    text-align: center;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+button.add-cart {
+    color: white;
+    background: #fe6f61;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+}
